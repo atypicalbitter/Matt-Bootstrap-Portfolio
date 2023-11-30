@@ -2,5 +2,14 @@
     --darkg: darkslategray;
     --whs: whitesmoke;
     --bck: black;
-    
+    --bla: blanchedalmond;
+}
+
+.card {
+background-color: var(--bla);
+color: var(--darkg);
+font-size: 2em;
+display: flex;
+align-items: flex-end;
+padding-right: 10px;
 }
