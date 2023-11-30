@@ -5,13 +5,27 @@
     --bla: blanchedalmond;
 }
 
+.hero-title {
+    border-radius: 0 !important;
+}
+
 .card {
 background-color: var(--bla);
 color: var(--darkg);
 font-size: 2em;
 display: flex;
 align-items: flex-end;
-padding-right: 10px;
 padding-bottom: 30px;
 border-radius: none;
+border-radius: 0 !important;
 }
+
+.card img{
+        width: 100%;
+        border-radius: 0 !important;
+}
+
+.card-text {
+color:var(--bck);
+}
+
