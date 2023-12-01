@@ -1,0 +1,23 @@
+:root {
+    --dsg: darkslategray;
+    --ws: whitesmoke;
+    --blan: blanchedalmond;
+    --blk:  black;
+}
+/* GLOBAL STYLING */
+html, body {
+width: 100%;
+height: 100%;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+.navbar {
+    background-color: var(--dsg);
+}
+
+.nav-item a:hover {
+    color: var(--ws)
+}
