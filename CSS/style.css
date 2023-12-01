@@ -14,10 +14,20 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
+.navbar-title  {
+    color: var(--blan);
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
 .navbar {
     background-color: var(--dsg);
 }
 
-.nav-item a:hover {
-    color: var(--ws)
+.nav-item a {
+    color: var(--blan);
 }
+.nav-item a:hover {
+    color: var(--ws);
+}
+
