@@ -1,3 +1,5 @@
+
+
 :root {
     --dsg: darkslategray;
     --ws: whitesmoke;
@@ -8,6 +10,8 @@
 html, body {
 width: 100%;
 height: 100%;
+border-radius: 0 !important;
+background-color: var(--dsg);
 }
 
 body h1 .navbar-title{
@@ -52,3 +56,90 @@ h1, .display-5 {
     padding-bottom: 20px;
     font-size: 4em !important;
 }
+
+.other-row{
+    padding-top: 10%;
+}
+.card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35rem;
+    border-radius: 0 !important;
+}
+.crf  .card-title{
+background-color: var(--dsg);
+font-size:3rem;
+padding:2%;
+color: var(--blan);
+margin: 0;
+filter: grayscale(0);
+position: absolute;
+bottom:10px;
+left: 5px;
+}
+
+
+
+
+.crf .card-title:hover{
+background-color: var(--blan);
+color: var(--dsg);
+transition: 0.8s;
+}
+
+/*.crf img:hover {
+    filter: grayscale(1);
+    transition: all 500ms;
+}*/
+
+.other-row .card-title {
+background-color: var(--dsg);
+padding:2%;
+color: var(--blan);
+display: block;
+position: absolute;
+bottom:2px;
+left: 5px;
+}
+
+.other-row img {
+height: 100%;
+width: 100%;
+border-radius: 0 !important;
+}
+.other-row .card-title:hover{
+    background-color: var(--blan);
+    color: var(--dsg);
+    transition: 0.8s;
+    }
+
+    /*.other-row :hover {
+        filter: grayscale(1);
+        transition: all 2ms;
+    }*/
+
+    .footerNav .nav-item {
+        display: flex;
+        justify-content: space-evenly;
+        color: var(--blk);
+    }
+
+    .footerNav {
+        background-color: var(--dsg);
+        font-size: 1.5em;
+    }
+    
+    ul .navbar-nav {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .footerNav .nav-item a {
+        color: var(--blan);
+        padding: 20px;
+        margin: 0 70px 0 70px;
+    }
+    .nav-item a:hover {
+        color: var(--ws);
+    }
