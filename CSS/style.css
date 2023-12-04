@@ -25,6 +25,15 @@ body h1 .navbar-title{
     padding-right: 20px;
 }
 
+ul .navbar-nav{
+    list-style: none;
+    display: flex; 
+  }
+  
+li a {
+    margin-right: 30px; 
+  }
+
 .navbar {
     background-color: var(--dsg);
     font-size: 1.5em;
@@ -47,6 +56,14 @@ ul .navbar-nav {
     width: 400px;
 }
 
+.card .card-body{
+    border: none;
+    border-radius: 20px !important;
+}
+
+.jumbo {
+background-color: var(--dsg) !important;
+}
 
 .mb-4 {
     margin-bottom: 0 !important;
