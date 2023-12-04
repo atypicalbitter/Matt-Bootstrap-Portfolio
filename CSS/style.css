@@ -100,13 +100,17 @@ bottom:10px;
 left: 5px;
 }
 
+.card-img:hover {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in-out;
+}
 
 
-.crf .card-title:hover{
+/*.crf .card-title:hover{
     background-color: var(--blan);
     color: var(--dsg);
     transition: 0.8s;
-    }
+    }*/
 
 /*.crf img:hover {
     filter: grayscale(1);
