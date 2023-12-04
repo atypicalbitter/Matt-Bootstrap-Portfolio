@@ -10,17 +10,25 @@ width: 100%;
 height: 100%;
 border-radius: 0 !important;
 background-color: var(--dsg);
+scroll-behavior: smooth;
 }
 
-body h1 .navbar-title{
+/*----NavBar----*/
+
+h1 .navbar-title{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-body-tertiary {
+    margin: 0;
 }
 
 .navbar-title  {
     color: var(--blan);
     text-decoration: none;
-    font-size: 2em;
+    font-size: 3em;
     padding-right: 20px;
+    padding-left: 20px;
 }
 
 ul .navbar-nav{
@@ -33,6 +41,7 @@ li a {
   }
 
 .navbar {
+    margin-top: 10px;
     background-color: var(--dsg);
     font-size: 1.5em;
 }
@@ -42,41 +51,81 @@ ul .navbar-nav {
     align-items: flex-end;
 }
 
+.nav-item a {
+    color: var(--blan);
+}
+
+.nav-item a:hover {
+    color: var(--ws);
+}  
+
+/*----Jumbotron----*/
+
 .jumbo p {
     font-size: 1.25em;
     width: 100%;
 }
 
-.nav-item a {
+h1, .display-5 { 
+    padding-bottom: 20px;
+    font-size: 4em !important;
     color: var(--blan);
 }
-.nav-item a:hover {
-    color: var(--ws);
-}  
+
+
+/*----About Me----*/
 
 .container-fluid img {
-    height:400px;
+    height:500px;
     width: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 3em;
 }
 
 .card {
     border: none !important;
     border-radius: none;
     border-style: none;
+    background-color: var(--dsg);
+    color: var(--blan);
 }
 
-.jumbo {
-background-color: var(--dsg) !important;
-}
+.bg-body-tertiary{
+    background-color: var(--dsg) !important;
+    }
+
+    .bg-body-tertiary p{
+        color: var(--blan)
+        }
 
 .mb-4 {
     margin-bottom: 0 !important;
 }
 
-h1, .display-5 { 
-    padding-bottom: 20px;
-    font-size: 4em !important;
-}
+/*----Code Refactor----*/
+
+.crf  .card-title{
+    font-size:3rem;
+    padding:1%;
+    color: var(--blan);
+    background-color: var(--dsg);
+    margin: 0;
+    position: absolute;
+    bottom:10px;
+    left: 15px;
+    }
+
+.crf .card-title:hover{
+    background-color: var(--blan);
+    color: var(--dsg);
+    transition: 0.8s;
+    }
+
+/*----Other Row----*/
 
 .other-row{
     padding-top: 10%;
@@ -88,34 +137,11 @@ h1, .display-5 {
     height: 35rem;
     border-radius: 0 !important;
 }
-.crf  .card-title{
-font-size:3rem;
-padding:2%;
-color: var(--blan);
-background-color: var(--dsg);
-margin: 0;
-filter: grayscale(0);
-position: absolute;
-bottom:10px;
-left: 5px;
-}
 
 .card-img:hover {
-    filter: grayscale(100%);
+    filter: grayscale(1);
     transition: filter 0.5s ease-in-out;
 }
-
-
-/*.crf .card-title:hover{
-    background-color: var(--blan);
-    color: var(--dsg);
-    transition: 0.8s;
-    }*/
-
-/*.crf img:hover {
-    filter: grayscale(1);
-    transition: all 500ms;
-}*/
 
 .other-row .card-title {
 background-color: var(--dsg);
@@ -143,6 +169,8 @@ border-radius: 0 !important;
         transition: all 2ms;
     }*/
 
+    /*----Footer----*/
+
     .footerNav .nav-item {
         display: flex;
         justify-content: space-evenly;
@@ -167,3 +195,16 @@ border-radius: 0 !important;
     .nav-item a:hover {
         color: var(--ws);
     }
+
+    .btn-dark {
+        background-color: var(--ws);
+        color: var(--dsg);
+        border: none;
+    }
+
+    .btn-dark:hover{
+        background-color: var(--blan);
+        color: var(--dsg);
+        border: none;
+    }
+    
