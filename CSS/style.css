@@ -82,8 +82,32 @@ h1, .display-5 {
     padding: 0;
 }
 
-h2 {
-    font-size: 3em;
+.card-title-about {
+    color: var(--ws);
+    font-size: 4em;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+
+.card-title-about:hover {
+    color: var(--blan);
+    font-size: 4em;
+    box-shadow: inset 300px 0 0 0 var(--blk);
+}
+
+.card-title-skills {
+    color: var(--ws);
+    font-size: 4em;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+
+.card-title-skills:hover {
+    color: var(--blan);
+    font-size: 4em;
+    box-shadow: inset 170px 0 0 0 var(--blk);
 }
 
 .card {
