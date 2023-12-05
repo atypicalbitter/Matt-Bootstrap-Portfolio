@@ -64,13 +64,14 @@ ul .navbar-nav {
 }  
 
 /*----Jumbotron----*/
+.text-column{
+   margin-left:10vw;
+    
+}
 
-.jumbo p {
+.text-column p {
     font-size: 1.25em;
     width: 100%;
-    margin: 0;
-    padding-bottom: 20px;
-    padding-right: 20px;
 }
 
 h1, .display-5 { 
@@ -88,9 +89,12 @@ h1, .display-5 {
     padding: 0;
 }
 
-.py-5 {
-    padding: 0 !important;
+.jumbo-button{
+
+    display: flex;
+    justify-content: center;
 }
+
 
 /*----About Me----*/
 
@@ -109,7 +113,7 @@ h1, .display-5 {
     box-shadow: inset 300px 0 0 0 var(--blan);
 }
 
-.card-title-skills {
+.card-title-contact {
     color: var(--blan);
     font-size: 4em;
     margin: 0 -.25rem;
@@ -117,10 +121,10 @@ h1, .display-5 {
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   }
 
-.card-title-skills:hover {
+.card-title-contact:hover {
     color: var(--dsg);
     font-size: 4em;
-    box-shadow: inset 170px 0 0 0 var(--blan);
+    box-shadow: inset 350px 0 0 0 var(--blan);
 }
 
 .card {
@@ -146,44 +150,100 @@ h1, .display-5 {
     margin-bottom: 0 !important;
 }
 
+.icons-list ul{
+    list-style-type: none;
+    font-size: 70px;
+    text-decoration: none;
+}
+
+
+
+.icons-list li:hover{
+    color: var(--blk);
+}
+
+a {
+    text-decoration: none;
+    color: var(--blan)
+}
+
+/*----Skills----*/
+
+.card-title-skills {
+    font-size: 4em;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    margin-left: 16px;
+}
+.card-title-skills:hover {
+    color: var(--dsg);
+    font-size: 4em;
+    box-shadow: inset 150px 0 0 0 var(--blan);
+}
+
+.d-block {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.icons-list-skills i {
+font-size: 5em;
+margin-left: 170px;
+margin-bottom: 30px;
+}
+
+.icons-list-skills i:hover{
+color: var(--blk);
+}
+
+
+
+
+.card-title-work {
+    font-size: 4em;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    margin-left: 16px;
+}
+.card-title-work:hover {
+    color: var(--dsg);
+    font-size: 4em;
+    box-shadow: inset 150px 0 0 0 var(--blan);
+}
+
+
 /*----Code Refactor----*/
 
-.crf  .card-title{
-    font-size:3rem;
-    padding:1%;
+.card-title-codeRef{
     color: var(--blan);
+    font-size: 4em;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    padding:2%;
+        display: block;
+position: absolute;
+bottom: 45px;
+
     background-color: var(--dsg);
-    margin: 0;
-    position: absolute;
-    bottom:10px;
-    left: 15px;
-    }
+  }
 
-.crf .card-title:hover{
-    background-color: var(--blan);
+.card-title-codeRef:hover {
     color: var(--dsg);
-    transition: 0.8s;
-    }
+    font-size: 4em;
+    box-shadow: inset 730px 0 0 0 var(--blan);
+}
 
-    .card-img {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 35rem;
-        border-radius: 0 !important;
-        filter: grayscale(0);
-    }
+.codeRef .card-img-top {
+   height: 500px;
+   padding-bottom: 0;
+}
 
-    a .card-img:hover {
-        filter: grayscale(1);
-        transition: filter 0.5s ease-in-out;
-    }
+
+
 
 /*----Other Row----*/
 
-.other-row{
-    padding-top: 10%;
-}
+
 
 .other-row img {
     height: 100%;
@@ -212,56 +272,62 @@ left: 5px;
     transition: all 0.5s ease-in-out;
 }
 
+.card-title-GD, .card-title-PWS, .card-title-P,.card-title-CS {
+    color: var(--blan);
+    font-size: 2em;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    padding:2%;
+        display: block;
+position: absolute;
+    top: 100px;
 
+    background-color: var(--dsg);
+  }
 
+.card-title-GD:hover {
+    color: var(--dsg);
+    font-size: 2em;
+    box-shadow: inset 330px 0 0 0 var(--blan);
+}
+.card-title-PWS:hover {
+    color: var(--dsg);
+    font-size: 2em;
+    box-shadow: inset 340px 0 0 0 var(--blan);
+}
+
+.card-title-P:hover{
+    color: var(--dsg);
+    font-size: 2em;
+    box-shadow: inset 200px 0 0 0 var(--blan);
+}
+
+.card-title-CS:hover{
+    color: var(--dsg);
+    font-size: 2em;
+    box-shadow: inset 260px 0 0 0 var(--blan);
+}
     
 
     /*----Footer----*/
 
-    .footerNav .nav-item {
+    .center {
         display: flex;
-        justify-content: space-evenly;
-        color: var(--blk);
-    }
+        justify-content: center;
+        align-items: center;}
 
-    .footerNav {
-        margin-top: 20px;
-        background-color: var(--dsg);
-        font-size: 1.5em;
-    }
-    
-    ul .navbar-nav {
-        display: flex;
-        align-items: flex-end;
-    }
-    
-    .footerNav .nav-item a {
-        color: var(--blan);
-        padding: 20px;
-        margin: 0 70px 0 70px;
-    }
-    .nav-item a:hover {
-        color: var(--ws);
-    }
+        .btn-group a:hover{
+            box-shadow: 0px 0px 10px 0px var(--blan);
+        }
 
-    .btn-dark {
-        background-color: var(--ws);
-        color: var(--dsg);
-        border: none;
-    }
-
-    .btn-dark:hover{
-        background-color: var(--blan);
-        color: var(--dsg);
-        border: none;
-    }
-    
-
-
-
-    
 
     @media screen and (max-width: 792px) {
+
+    main, body {
+        height: 100%;
+        width: 100%;
+    }
 
     a.nav-link {
         padding-left: 25px;
@@ -273,5 +339,11 @@ left: 5px;
     .footerNav .nav-item a {
         padding: 15px;
         margin: 0;
+        }
+
+        .card-body p {
+            padding-top: 10px;
+            width: 100%;
+            height: 100%;
         }
     }
