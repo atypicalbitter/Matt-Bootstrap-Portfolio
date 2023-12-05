@@ -69,7 +69,6 @@ ul .navbar-nav {
     margin: 0;
     padding-bottom: 20px;
     padding-right: 20px;
-
 }
 
 h1, .display-5 { 
@@ -261,6 +260,12 @@ left: 5px;
     a.nav-link {
         padding-left: 25px;
     }
+    .crf  .card-title{
+        font-size:2rem;
+    }
 
-
-}
+    .footerNav .nav-item a {
+        padding: 15px;
+        margin: 0;
+        }
+    }
