@@ -13,19 +13,15 @@ height: 100%;
 border-radius: 0 !important;
 background-color: var(--dsg);
 scroll-behavior: smooth;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*----NavBar----*/
 
-h1 .navbar-title{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .bg-body-tertiary {
     margin: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
+    background-color: var(--dsg) !important;
+        }
 
 .navbar-title  {
     color: var(--blan);
@@ -50,10 +46,6 @@ li a {
     font-size: 1.5em;
 }
 
-ul .navbar-nav {
-    display: flex;
-    align-items: flex-end;
-}
 
 .nav-item a {
     color: var(--blan);
@@ -65,7 +57,7 @@ ul .navbar-nav {
 
 /*----Jumbotron----*/
 .text-column{
-   margin-left:10vw;
+margin-left:10vw;
     
 }
 
@@ -90,7 +82,6 @@ h1, .display-5 {
 }
 
 .jumbo-button{
-
     display: flex;
     justify-content: center;
 }
@@ -113,6 +104,25 @@ h1, .display-5 {
     box-shadow: inset 300px 0 0 0 var(--blan);
 }
 
+.card {
+    border: none !important;
+    border-radius: none;
+    border-style: none;
+    background-color: var(--dsg);
+    color: var(--blan);
+}
+
+.card-text1 {
+    font-size: 20px;
+}
+
+
+.bg-body-tertiary p{
+    color: var(--blan);
+}
+
+/*----Contact Me----*/
+
 .card-title-contact {
     color: var(--blan);
     font-size: 4em;
@@ -127,36 +137,13 @@ h1, .display-5 {
     box-shadow: inset 350px 0 0 0 var(--blan);
 }
 
-.card {
-    border: none !important;
-    border-radius: none;
-    border-style: none;
-    background-color: var(--dsg);
-    color: var(--blan);
-}
-
-.card-body p {
-    padding-top: 10px;
-}
-.bg-body-tertiary{
-    background-color: var(--dsg) !important;
-    }
-
-    .bg-body-tertiary p{
-        color: var(--blan)
-        }
-
-.mb-4 {
-    margin-bottom: 0 !important;
-}
 
 .icons-list ul{
     list-style-type: none;
     font-size: 70px;
     text-decoration: none;
+
 }
-
-
 
 .icons-list li:hover{
     color: var(--blk);
@@ -196,8 +183,7 @@ margin-bottom: 30px;
 color: var(--blk);
 }
 
-
-
+/*----Work----*/
 
 .card-title-work {
     font-size: 4em;
@@ -210,26 +196,22 @@ color: var(--blk);
     box-shadow: inset 150px 0 0 0 var(--blan);
 }
 
-
 /*----Code Refactor----*/
 
 .card-title-codeRef{
     color: var(--blan);
     font-size: 4em;
     margin: 0 -.25rem;
-    padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     padding:2%;
-        display: block;
-position: absolute;
-bottom: 45px;
-
+    display: block;
+    position: absolute;
+    bottom: 45px;
     background-color: var(--dsg);
   }
 
 .card-title-codeRef:hover {
     color: var(--dsg);
-    font-size: 4em;
     box-shadow: inset 730px 0 0 0 var(--blan);
 }
 
@@ -238,84 +220,48 @@ bottom: 45px;
    padding-bottom: 0;
 }
 
-
-
-
 /*----Other Row----*/
 
 
-
-.other-row img {
-    height: 100%;
-    width: 100%;
-    border-radius: 0 !important;
-    filter: grayscale(0);
-    }
-
-.other-row .card-title {
-background-color: var(--dsg);
-padding:2%;
-color: var(--blan);
-display: block;
-position: absolute;
-bottom:2px;
-left: 5px;
-}
-
-.card-title:hover {
-    background-color: var(--blan);
-    color: var(--dsg);
-    transition: 0.8s;
-}
-    .card-img :hover {
-    filter: grayscale(1);
-    transition: all 0.5s ease-in-out;
-}
 
 .card-title-GD, .card-title-PWS, .card-title-P,.card-title-CS {
     color: var(--blan);
     font-size: 2em;
     margin: 0 -.25rem;
-    padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     padding:2%;
-        display: block;
-position: absolute;
+    display: block;
+    position: absolute;
     top: 100px;
-
     background-color: var(--dsg);
   }
 
 .card-title-GD:hover {
     color: var(--dsg);
-    font-size: 2em;
     box-shadow: inset 330px 0 0 0 var(--blan);
 }
 .card-title-PWS:hover {
     color: var(--dsg);
-    font-size: 2em;
     box-shadow: inset 340px 0 0 0 var(--blan);
 }
-
 .card-title-P:hover{
     color: var(--dsg);
-    font-size: 2em;
     box-shadow: inset 200px 0 0 0 var(--blan);
 }
-
 .card-title-CS:hover{
     color: var(--dsg);
-    font-size: 2em;
     box-shadow: inset 260px 0 0 0 var(--blan);
 }
     
 
     /*----Footer----*/
 
+
     .center {
         display: flex;
         justify-content: center;
-        align-items: center;}
+        align-items: center;
+    }
 
         .btn-group a:hover{
             box-shadow: 0px 0px 10px 0px var(--blan);
@@ -332,18 +278,31 @@ position: absolute;
     a.nav-link {
         padding-left: 25px;
     }
-    .crf  .card-title{
-        font-size:2rem;
-    }
 
-    .footerNav .nav-item a {
-        padding: 15px;
-        margin: 0;
+    .icons-list-skills i {
+        font-size: 3em;
+        margin-left: 90px;
+        margin-bottom: 20px;
         }
+
 
         .card-body p {
             padding-top: 10px;
             width: 100%;
             height: 100%;
         }
+
+        .centre .btn-toolbar  {
+        margin-top: 100px;
+        }
+
+        .card-title-GD, .card-title-PWS, .card-title-P,.card-title-CS {
+            font-size: 0.8em;
+          }
+
+
+
+          footer{
+            margin-top: 150px;
+          }
     }
