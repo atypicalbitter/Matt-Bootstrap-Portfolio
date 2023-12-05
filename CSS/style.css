@@ -21,6 +21,8 @@ h1 .navbar-title{
 
 .bg-body-tertiary {
     margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .navbar-title  {
@@ -64,12 +66,14 @@ ul .navbar-nav {
 .jumbo p {
     font-size: 1.25em;
     width: 100%;
+    margin: 0;
 }
 
 h1, .display-5 { 
     padding-bottom: 20px;
     font-size: 4em !important;
     color: var(--blan);
+    margin: 0;
 }
 
 
@@ -83,7 +87,7 @@ h1, .display-5 {
 }
 
 .card-title-about {
-    color: var(--ws);
+    color: var(--blan);
     font-size: 4em;
     margin: 0 -.25rem;
     padding: 0 .25rem;
@@ -91,13 +95,13 @@ h1, .display-5 {
   }
 
 .card-title-about:hover {
-    color: var(--blan);
+    color: var(--dsg);
     font-size: 4em;
-    box-shadow: inset 300px 0 0 0 var(--blk);
+    box-shadow: inset 300px 0 0 0 var(--blan);
 }
 
 .card-title-skills {
-    color: var(--ws);
+    color: var(--blan);
     font-size: 4em;
     margin: 0 -.25rem;
     padding: 0 .25rem;
@@ -105,9 +109,9 @@ h1, .display-5 {
   }
 
 .card-title-skills:hover {
-    color: var(--blan);
+    color: var(--dsg);
     font-size: 4em;
-    box-shadow: inset 170px 0 0 0 var(--blk);
+    box-shadow: inset 170px 0 0 0 var(--blan);
 }
 
 .card {
@@ -118,6 +122,9 @@ h1, .display-5 {
     color: var(--blan);
 }
 
+.card-body p {
+    padding-top: 10px;
+}
 .bg-body-tertiary{
     background-color: var(--dsg) !important;
     }
@@ -149,23 +156,32 @@ h1, .display-5 {
     transition: 0.8s;
     }
 
+    .card-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35rem;
+        border-radius: 0 !important;
+        filter: grayscale(0);
+    }
+
+    a .card-img:hover {
+        filter: grayscale(1);
+        transition: filter 0.5s ease-in-out;
+    }
+
 /*----Other Row----*/
 
 .other-row{
     padding-top: 10%;
 }
-.card-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 35rem;
-    border-radius: 0 !important;
-}
 
-.card-img:hover {
-    filter: grayscale(1);
-    transition: filter 0.5s ease-in-out;
-}
+.other-row img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0 !important;
+    filter: grayscale(0);
+    }
 
 .other-row .card-title {
 background-color: var(--dsg);
@@ -177,21 +193,19 @@ bottom:2px;
 left: 5px;
 }
 
-.other-row img {
-height: 100%;
-width: 100%;
-border-radius: 0 !important;
-}
-.other-row .card-title:hover{
+.card-title:hover {
     background-color: var(--blan);
     color: var(--dsg);
     transition: 0.8s;
-    }
+}
+    .card-img :hover {
+    filter: grayscale(1);
+    transition: all 0.5s ease-in-out;
+}
 
-    /*.other-row :hover {
-        filter: grayscale(1);
-        transition: all 2ms;
-    }*/
+
+
+    
 
     /*----Footer----*/
 
