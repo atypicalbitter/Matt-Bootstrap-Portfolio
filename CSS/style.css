@@ -3,6 +3,8 @@
     --ws: whitesmoke;
     --blan: blanchedalmond;
     --blk:  black;
+    --background: #060608;
+    --color: #FAFAFA;
 }
 
 html, body {
@@ -253,6 +255,10 @@ left: 5px;
         color: var(--dsg);
         border: none;
     }
+    
+
+
+
     
 
     @media screen and (max-width: 792px) {
