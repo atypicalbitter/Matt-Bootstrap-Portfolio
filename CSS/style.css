@@ -67,6 +67,9 @@ ul .navbar-nav {
     font-size: 1.25em;
     width: 100%;
     margin: 0;
+    padding-bottom: 20px;
+    padding-right: 20px;
+
 }
 
 h1, .display-5 { 
@@ -77,14 +80,19 @@ h1, .display-5 {
 }
 
 
-/*----About Me----*/
-
 .container-fluid img {
-    height:500px;
-    width: 400px;
+    height:450px;
+    width: 450px;
     margin: 0;
     padding: 0;
 }
+
+.py-5 {
+    padding: 0 !important;
+}
+
+/*----About Me----*/
+
 
 .card-title-about {
     color: var(--blan);
@@ -216,6 +224,7 @@ left: 5px;
     }
 
     .footerNav {
+        margin-top: 20px;
         background-color: var(--dsg);
         font-size: 1.5em;
     }
@@ -246,3 +255,12 @@ left: 5px;
         border: none;
     }
     
+
+    @media screen and (max-width: 792px) {
+
+    a.nav-link {
+        padding-left: 25px;
+    }
+
+
+}
