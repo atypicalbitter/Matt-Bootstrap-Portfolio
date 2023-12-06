@@ -285,6 +285,9 @@ color: var(--blk);
             height: 100%;
         }
 
+        .card-title-codeRef{
+            font-size: 2em;}
+
         .card-title-GD, .card-title-PWS, .card-title-P,.card-title-CS {
             font-size: 0.8em;
 }
@@ -294,6 +297,6 @@ color: var(--blk);
             }
 
         footer{
-            margin-top: 150px;
+            margin-top: 300px;
 }
     }
